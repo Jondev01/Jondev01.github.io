@@ -21,6 +21,7 @@
 
 	body {
 		-webkit-text-size-adjust: none;
+		overflow: hidden;
 	}
 
 /* Box Model */
@@ -37,9 +38,6 @@
 		width: device-width;
 	}
 
-	body {
-		-ms-overflow-style: scrollbar;
-	}
 
 	@media screen and (max-width: 480px) {
 
@@ -121,13 +119,13 @@
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		color: rgba(255, 255, 255, 0.75);
 		text-decoration: none;
-		border-bottom: 1px dotted;
 		outline: 0;
 	}
 
 		a:hover {
 			color: #FFF;
 			border: none;
+			cursor: pointer;
 		}
 
 	strong, b {
@@ -393,7 +391,7 @@
 			padding-left: 0.25em;
 		}
 
-	ul {
+	/*ul {
 		list-style: disc;
 		margin: 0 0 2em 0;
 		padding-left: 1em;
@@ -416,7 +414,7 @@
 				ul.alt li:first-child {
 					border-top: 0;
 					padding-top: 0;
-				}
+				}*/
 
 		ul.icons {
 			cursor: default;
@@ -457,7 +455,7 @@
 					padding-right: 0;
 				}
 
-		ul.actions {
+		/*ul.actions {
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
@@ -522,7 +520,7 @@
 
 					ul.actions.fit.small li {
 						padding: 0 0 0 0.5em;
-					}
+					}*/
 
 			@media screen and (max-width: 480px) {
 
@@ -814,13 +812,15 @@
 		justify-content: center;
 		padding: 8em 4em 6em 4em;
 		min-height: 70vh;
+		height: 100vh;
 		background-position: center;
 		background-size: cover;
-		background-repeat: no-repeat;
+		background-repeat: no-repeat;/*VhnTYfasszA, LhDWW8PhPoE, 7wBFsHWQDlk*/
+		background-image: url(https://source.unsplash.com/MiLSst1yExk/1600x900);
 		border-top: 0;
 		position: relative;
 		text-align: center;
-		overflow: hidden;
+
 	}
 
 		#banner .inner {
@@ -886,43 +886,12 @@
 				border: none;
 			}
 
-		#banner .more {
-			background-position: center 1.35em;
-			background-repeat: no-repeat;
-			background-size: auto;
-			border: 1px solid #fff;
-			border-radius: 100%;
-			color: rgba(255, 255, 255, 0.75);
-			display: block;
-			height: 4em;
-			text-indent: 4em;
-			overflow: hidden;
-			white-space: nowrap;
-			width: 4em;
-			z-index: 2;
-			margin: 0 auto 2em auto;
-		}
-
 			#banner .more:hover {
 				background-color: rgba(255, 255, 255, 0.05);
 				border: 1px solid #fff;
 				color: #FFF;
 			}
 
-		#banner video {
-			-moz-transform: translateX(50%) translateY(50%);
-			-webkit-transform: translateX(50%) translateY(50%);
-			-ms-transform: translateX(50%) translateY(50%);
-			transform: translateX(50%) translateY(50%);
-			position: absolute;
-			bottom: 50%;
-			right: 50%;
-			width: auto;
-			height: auto;
-			min-width: 100%;
-			min-height: 100%;
-			overflow: hidden;
-		}
 
 		#banner:before {
 			-moz-transition: opacity 3s ease;
@@ -981,13 +950,13 @@
 /* Main */
 
 	#main {
-		padding: 4em 0 2em 0;
+		padding: 0;
 	}
 
 		@media screen and (max-width: 736px) {
 
 			#main {
-				padding: 3em 0 1em 0;
+				padding: 0;
 			}
 
 		}
@@ -1050,19 +1019,74 @@
 			}
 
 		}
-		
-		.blocksection {
-			padding: 4em 0 2em 0;
-			background-color: #1b1b1f;
-			text-align: center;
-			margin-bottom: 5rem;
-			border-radius: 30px;
-			border: 5px double yellow;
-		}
 
 		.border {
 			box-shadow: 3px 2px 4px #444;
 			border-radius: 10px;
+		}
+
+		.nav {
+			position: fixed;
+			top: 0;
+			z-index: 100;
+			display: flex;
+			width: 100%;
+			height: 3rem;
+			background-color: rgba(0,0,0,0.7);
+		}
+		.nav ul {
+			display: flex;
+			list-style: none;
+			width: 100%;
+			justify-content: center;
+		}
+		.nav ul li {
+			display: inline-block;
+			margin: 0 1rem;
+			padding: 1rem;
+		}
+		.nav ul li a {
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+		.container {
+			width: 100%;
+			height: 100vh;
+			overflow-y: scroll;
+			scroll-behavior: smooth;
+			scroll-snap-type: y proximity;
+		}
+
+		section {
+			padding: 8em 4em 6em 4em;
+			margin: 0;
+			min-height: 100vh;
+			scroll-snap-align: start;
+		}
+
+		#skills {
+			position: relative;
+			justify-content: center;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;/*VhnTYfasszA, LhDWW8PhPoE, 7wBFsHWQDlk, cbuWlxiYDO4*/
+			background-image: url(https://source.unsplash.com/68ZlATaVYIo/1600x900);
+		}
+
+		#skills .blocksection {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			color: #f2f2f2;
+			/*transform: translateY(-50%);*/
+			transform: translate(-50%, -50%);
+			padding: 20px;
+			min-width: 250px;
+			background-color: #1b1b1f90;
+			text-align: center;
+			border-radius: 30px;
+			border: 5px double yellow;
 		}
         /*
 	Some styles taken from Full Motion by TEMPLATED

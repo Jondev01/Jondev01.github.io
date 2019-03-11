@@ -1,130 +1,148 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>My Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="./assets/css/styles.css" />
-	</head>
-	<body id="top">
 
-				<section id="banner">
-					<div class="inner">
-						<header>
-							<h1>Jondev01</h1>
-							<p>A collection of my projects</p>
-						</header>
-					</div>
-				</section>
+<head>
+	<title>My Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
 
-			<!-- Main -->
-				<div id="main">
-					<div class="inner">
-						<div class="blocksection">
-							<p>I am interested in fullstack web development and game development.</p>
-							<p>My technical skill set includes: C++, HTML, CSS/Sass, PHP, Javascript, React, Laravel, SQL, Git</p>
-							</div>
-						</div>
-					<!-- Boxes -->
-						<div class="thumbnails">
+<body id="top">
+	<div class="container">
+		<nav class="nav">
+			<ul>
+				<li><a href="#banner">Home</a></li>
+				<li><a href="#skills">Skill Set</a></li>
+				<li><a href="#projects">Proejcts</a></li>
+				<!--<li><a href="#footer">More</a></li>-->
+			</ul>
+		</nav>
+		<section id="banner">
+			<div class="inner">
+				<header>
+					<h1>Jondev01</h1>
+					<p>A collection of my projects</p>
+				</header>
+			</div>
+		</section>
 
-							<div class="box">
-								<div class="inner border">
-									<h3>Flashcards app</h3>
-									<a href="https://github.com/Jondev01/flashcards" class="image fit" target="_blank"><img src="assets/images/flashcards.jpg" alt="" /></a>
-									<p>AJAX CRUD application built with Laravel and vanilla JS.
-										Users can create and review decks of flashcards which are stored in a MySQL-database.</p>
-									<a href="https://flashcardsapplication.herokuapp.com" class="button fit" target="_blank">DEMO</a>
-									<a href="https://github.com/Jondev01/flashcards" class="button fit" target="_blank">CODE</a>
-								</div>
-							</div>
+		<!-- Main -->
+		<div id="main">
 
-							<div class="box">
-								<div class="inner border">
-									<h3>Blogging platform</h3>
-									<a href="https://github.com/Jondev01/blog" class="image fit" target="_blank"><img src="assets/images/blog.jpg" alt="" /></a>
-									<p>CRUD application built with Laravel and vanilla JS. Users can create a blog.
-										 Users, Blog posts and comments are stored in a MySQL database. </p>
-										<a href="https://create-a-blog.herokuapp.com" class="button fit" target="_blank">DEMO</a>
-										<a href="https://github.com/Jondev01/blog" class="button fit" target="_blank">CODE</a>
-								</div>
-							</div>
-							<div class="box">
-								<div class="inner border">
-									<h3>Platform game</h3>
-									<video class="image fit" height="210" controls>
-										<source src="./assets/videos/cpp-game.mp4" type="video/mp4">
-										Your browser does not supprt video
-									</video>
-									<p>2d game built with Object oriented C++ and the SDL2 graphics library. 
-										 Implements simple physics for falling, jumping and collisions.</p>
-										 <a href=# class="button fit">DEMO NOT AVAILABLE</a>
-										 <a href="https://github.com/Jondev01/2d-cpp-game" class="button fit" target="_blank">CODE</a>
-								</div>
-							</div>
-
-							<div class="box">
-								<div class="inner border">
-									<h3>Tower of Hanoi</h3>
-									<a href="https://github.com/Jondev01/Tower-if-Hanoi" class="image fit" target="_blank"><img src="assets/images/tower.jpg" alt="" /></a>
-									<p>The classic game built with react. Allows for an adjustable amount of discs and animated solution steps.</p>
-									<a href="https://tower-of-hanoi-1619d.firebaseapp.com/" class="button style3 fit" target="_blank">DEMO</a>
-									<a href="https://github.com/Jondev01/Tower-if-Hanoi" class="button style3 fit" target="_blank">CODE</a>
-								</div>
-							</div>
-
-							<div class="box">
-								<div class="inner border">
-									<h3>AIs and javascript games</h3>
-									<video class="image fit" height="195" controls>
-										<source src="./assets/videos/smart-particles.mp4" type="video/mp4">
-										Your browser does not supprt video
-									</video>
-									<p>Simple games written in object oriented javascript using the p5 library. AIs were created using genetic algorithms or machine learning.</p>
-									<a href="https://ai-js-compilation.firebaseapp.com/" class="button style2 fit" target="_blank"> DEMO</a>
-									<a href="https://github.com/Jondev01/AI-js-compilation" class="button style2 fit" target="_blank">CODE</a>
-								</div>
-							</div>
-
-							<div class="box">
-								<div class="inner border">
-									<h3>Chess game in python</h3>
-									<a href="https://github.com/Jondev01/chess-game" class="image fit" target="_blank"><img src="assets/images/chess.jpg" style="height:220px"alt="" /></a>
-									<p>Chess game made in python and tkinter graphics</p>
-									<a href="#" class="button style2 fit">DEMO NOT AVAILABLE</a>
-									<a href="https://github.com/Jondev01/chess-game" class="button style2 fit">CODE</a>
-								</div>
-							</div>
-
-							<div class="box">
-								<div class="inner border">
-									<h3>React course project</h3>
-									<p>Single page application built along react Udemy tutorial by M. Schwarzmüller. Uses react-router and react-redux</p>
-									<a href="https://react-my-pizza.firebaseapp.com/" class="button fit">DEMO</a>
-									<a href="https://github.com/Jondev01/pizza-builder" class="button fit">CODE</a>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
+			<section id="skills">
+				<div class="blocksection">
+					<p>I am interested in fullstack web development and game development.</p>
+					<p>My technical skill set includes: C++, HTML, CSS/Sass, PHP, Javascript, React, Laravel, SQL, Git</p>
 				</div>
+			</section>
 
-			<!-- Footer -->
-				<footer id="footer">
-					<div class="inner">
-						<h2>Want to see more?</h2>
-						<p>I can send more projects to you if you are interested.</p>
-
-						<ul class="icons">
-							<li><a href="https://github.com/Jondev01" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="mailto:jonathan2008@live.se" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
+			<!-- Boxes -->
+			<section id="projects">
+				<div class="thumbnails">
+					<div class="box">
+						<div class="inner border">
+							<h3>Flashcards app</h3>
+							<a href="https://github.com/Jondev01/flashcards" class="image fit" target="_blank"><img src="assets/images/flashcards.jpg"
+								 alt="" /></a>
+							<p>AJAX CRUD application built with Laravel and vanilla JS.
+								Users can create and review decks of flashcards which are stored in a MySQL-database.</p>
+							<a href="https://flashcardsapplication.herokuapp.com" class="button fit" target="_blank">DEMO</a>
+							<a href="https://github.com/Jondev01/flashcards" class="button fit" target="_blank">CODE</a>
+						</div>
 					</div>
-				</footer>
 
-	</body>
-	<!--Based on Full Motion by TEMPLATED
+					<div class="box">
+						<div class="inner border">
+							<h3>Blogging platform</h3>
+							<a href="https://github.com/Jondev01/blog" class="image fit" target="_blank"><img src="assets/images/blog.jpg"
+								 alt="" /></a>
+							<p>CRUD application built with Laravel and vanilla JS. Users can create a blog.
+								Users, Blog posts and comments are stored in a MySQL database. </p>
+							<a href="https://create-a-blog.herokuapp.com" class="button fit" target="_blank">DEMO</a>
+							<a href="https://github.com/Jondev01/blog" class="button fit" target="_blank">CODE</a>
+						</div>
+					</div>
+					<div class="box">
+						<div class="inner border">
+							<h3>Platform game</h3>
+							<video class="image fit" height="210" controls>
+								<source src="./assets/videos/cpp-game.mp4" type="video/mp4">
+								Your browser does not supprt video
+							</video>
+							<p>2d game built with Object oriented C++ and the SDL2 graphics library.
+								Implements simple physics for falling, jumping and collisions.</p>
+							<a href=# class="button fit">DEMO NOT AVAILABLE</a>
+							<a href="https://github.com/Jondev01/2d-cpp-game" class="button fit" target="_blank">CODE</a>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="inner border">
+							<h3>Tower of Hanoi</h3>
+							<a href="https://github.com/Jondev01/Tower-if-Hanoi" class="image fit" target="_blank"><img src="assets/images/tower.jpg"
+								 alt="" /></a>
+							<p>The classic game built with react. Allows for an adjustable amount of discs and animated solution steps.</p>
+							<a href="https://tower-of-hanoi-1619d.firebaseapp.com/" class="button style3 fit" target="_blank">DEMO</a>
+							<a href="https://github.com/Jondev01/Tower-if-Hanoi" class="button style3 fit" target="_blank">CODE</a>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="inner border">
+							<h3>AIs and javascript games</h3>
+							<video class="image fit" height="195" controls>
+								<source src="./assets/videos/smart-particles.mp4" type="video/mp4">
+								Your browser does not supprt video
+							</video>
+							<p>Simple games written in object oriented javascript using the p5 library. AIs were created using genetic
+								algorithms or machine learning.</p>
+							<a href="https://ai-js-compilation.firebaseapp.com/" class="button style2 fit" target="_blank"> DEMO</a>
+							<a href="https://github.com/Jondev01/AI-js-compilation" class="button style2 fit" target="_blank">CODE</a>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="inner border">
+							<h3>Chess game in python</h3>
+							<a href="https://github.com/Jondev01/chess-game" class="image fit" target="_blank"><img src="assets/images/chess.jpg"
+								 style="height:220px" alt="" /></a>
+							<p>Chess game made in python and tkinter graphics</p>
+							<a href="#" class="button style2 fit">DEMO NOT AVAILABLE</a>
+							<a href="https://github.com/Jondev01/chess-game" class="button style2 fit">CODE</a>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="inner border">
+							<h3>React course project</h3>
+							<p>Single page application built along react Udemy tutorial by M. Schwarzmüller. Uses react-router and
+								react-redux</p>
+							<a href="https://react-my-pizza.firebaseapp.com/" class="button fit">DEMO</a>
+							<a href="https://github.com/Jondev01/pizza-builder" class="button fit">CODE</a>
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<h2>Want to see more?</h2>
+				<p>I can send more projects to you if you are interested.</p>
+
+				<ul class="icons">
+					<li><a href="https://github.com/Jondev01" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="mailto:jonathan2008@live.se" class="icon fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+</body>
+<!--Based on Full Motion by TEMPLATED
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)-->
+
 </html>
