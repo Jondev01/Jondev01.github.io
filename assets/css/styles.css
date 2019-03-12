@@ -43,6 +43,11 @@
 
 		html, body {
 			min-width: 320px;
+			overflow: default;
+		}
+
+		.container {
+			overflow-y: visible;
 		}
 
 	}
